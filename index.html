@@ -3,22 +3,33 @@
   <head>
     <meta charset=UTF-8>
     <meta name="viewport" contenet="width=device-width, initial-scale=1.0"> 
-    <title> Empaque 3D </title>
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <title> Gallery Virtual CCUAMEX </title>
+  <script src="../../../dist/aframe-master.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!--
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    -->
     <!-- paqueteria para girfs-->
-
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+
+    <script src="js/components/aframe-tooltip-component.js"></script>
+    <script src="js/components/camera-position.js"></script>
+    <script src="js/components/link-controls.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+  
 
 </head>
   <body>
-    <a-scene  physics="gravity:0">
-        <a-entity id="ring" movement-controls static-body>
-            <a-entity id="camera" camera position="0 5 0" look-controls></a-entity> 
+    <a-scene
+             physics="gravity:0">
+      
+      
+      <a-entity movement-controls kinematic-body>
+      <a-entity id="camera" camera position="0 3 0" look-controls cursor="rayOrigin: mouse"> 
             </a-entity> 
               
                   <a-assets>
