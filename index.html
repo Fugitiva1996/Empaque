@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" contenet="width=device-width, initial-scale=1.0"> 
+    <title> Empaque 3D </title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <!-- paqueteria para girfs-->
+
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+
+
+</head>
+  <body>
+    <a-scene  physics="gravity:0">
+        <a-entity id="ring" movement-controls kinematic-body>
+            <a-entity id="camera" camera position="0 3 0" look-controls></a-entity> 
+            </a-entity> 
+              
+                  <a-assets>
+      
+                    <img id = "L1" src = "./3/L1.jpeg" >
+                    <img id = "L2" src = "./3/L2.jpeg" >
+                    <img id = "L3" src = "./3/L3.jpeg" >
+                    <img id = "L4" src = "./3/L4.jpeg" >
+                    <img id = "T1" src = "./3/T1.jpeg" >
+                    <img id = "T2" src = "./3/T2.jpeg" >
+                  </a-assets>
+    <a-sky color ="#86C6EB"></a-sky>
+    
+    <a-plane  src="#L1" width="46" height="86" position="0 0 0" >
+    <!--<a-plane  src="" position="6.526 2.0 -19.412" scale="2 4 8" >
+    <a-plane  src="" position="6.526 2.0 -19.412" scale="2 4 8" >
+    <a-plane  src="" position="6.526 2.0 -19.412" scale="2 4 8" >
+    <a-plane  src="" position="6.526 2.0 -19.412" scale="2 4 8" >
+    <a-plane  src="" position="6.526 2.0 -19.412" scale="2 4 8" >
+    </a-plane>    
+    </a-plane>      
+    </a-plane>
+    </a-plane>    
+    </a-plane>    
+    </a-plane>-->
+        </a-scene>
+  </body>
+</html>
